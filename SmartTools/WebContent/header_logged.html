@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SmartTools</title>
+
+<link rel="stylesheet" href="CSS/progress_ie7.css" />
+<link rel="stylesheet" href="CSS/gral.css" />
+
+<script type="text/javascript">
+	function mostrar_progreso() {
+		document.getElementById("div_process").style.display = "block";
+		return false;
+	}
+	function ocultar_progreso() {
+		document.getElementById("div_process").style.display = "none";
+		return false;
+	}
+	function mostrar_mensaje(msg) {
+		document.getElementById("lb_message").textContent = msg;
+		document.getElementById("div_msg").style.display = "block";
+		document.getElementById("div_bc").style.display = "block";
+		document.getElementById("bt_aceptar_mensaje").focus();
+		return false;
+	}
+	function ocultar_mensaje() {
+		document.getElementById("div_msg").style.display = "none";
+		document.getElementById("div_bc").style.display = "none";
+		return false;
+	}
+</script>
+</head>
+<body>
+	<div class="progressBackgroundFilter" id="div_process"
+		style="display: none;">
+		<div class="processMessage">
+			<br /> Un momento por favor...<br /> <br /> <img
+				src="CSS/img/Loading9.gif" alt="- - -" /> <br /> <br />
+		</div>
+	</div>
+	<div class="progressBackgroundFilter" id="div_bc"
+		style="display: none;"></div>
+	<div class="processMessage" style="display: none" id="div_msg">
+		<br /> <label id="lb_message">text</label><br /> <br />
+		<button onclick="return ocultar_mensaje();" id="bt_aceptar_mensaje"
+			class="tiny button">Aceptar</button>
+		<br /> <br />
+	</div>
+	<div style="background-color: white;min-height: 500px; padding:0px 10px 10px 10px;width: 1000px; margin:0px auto;">
+		<div>
+			<img src="CSS/img/three115.png" />
+			<h1 style="display:inline">Smart Tools</h1>
+		</div>
+	<div class="clear hideSkiplink">
+		<ul id="menu2" class="menu3">
+			<li><a id="A1" href="/SmartTools/home.jsp"> Inicio</a></li>
+			<li><a id="A2" href="/SmartTools/nuevo.jsp">Nuevo Concurso</a></li>
+			<li><a id="A2" href="/SmartTools/editar.jsp">Editar Concurso</a></li>
+		</ul>
+
+	</div>
